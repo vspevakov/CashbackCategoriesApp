@@ -4,8 +4,33 @@ services:
   cashback-app:
     build: .
     container_name: cashback-app
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
     ports:
       - "8000:8000"
     volumes:
       - ./data:/app/data
+    environment:
+      NATS_URL: nats://nats:4222
+    depends_on:
+      - nats
+    restart: unless-stopped
+
+  ollama-worker:
+    build: .
+    container_name: ollama-worker
+    command: python -m ollama_service.worker
+    env_file:
+      - .env
+    environment:
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      NATS_URL: nats://nats:4222
+    depends_on:
+      - nats
+    restart: unless-stopped
+
+  nats:
+    image: nats:2.10-alpine
+    container_name: nats
+    ports:
+      - "4222:4222"
     restart: unless-stopped

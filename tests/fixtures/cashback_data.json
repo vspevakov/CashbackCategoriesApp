@@ -1,0 +1,76 @@
+{
+  "Иван": {
+    "Tinkoff Black": {
+      "Супермаркеты": {
+        "enabled": true,
+        "percent": 5
+      },
+      "Рестораны и кафе": {
+        "enabled": false,
+        "percent": 0
+      },
+      "Такси": {
+        "enabled": true,
+        "percent": 7
+      }
+    },
+    "Alfa Travel": {
+      "Супермаркеты": {
+        "enabled": false,
+        "percent": 0
+      },
+      "Рестораны и кафе": {
+        "enabled": false,
+        "percent": 0
+      },
+      "Такси": {
+        "enabled": false,
+        "percent": 0
+      },
+      "АЗС": {
+        "enabled": true,
+        "percent": 4
+      }
+    }
+  },
+  "Мария": {
+    "Sber Prime": {
+      "Супермаркеты": {
+        "enabled": true,
+        "percent": 3
+      },
+      "Рестораны и кафе": {
+        "enabled": true,
+        "percent": 6
+      },
+      "Такси": {
+        "enabled": false,
+        "percent": 0
+      },
+      "АЗС": {
+        "enabled": false,
+        "percent": 0
+      }
+    }
+  },
+  "Алексей": {
+    "VTB Cashback": {
+      "Супермаркеты": {
+        "enabled": false,
+        "percent": 0
+      },
+      "Рестораны и кафе": {
+        "enabled": false,
+        "percent": 0
+      },
+      "Такси": {
+        "enabled": true,
+        "percent": 10
+      },
+      "АЗС": {
+        "enabled": true,
+        "percent": 2
+      }
+    }
+  }
+}

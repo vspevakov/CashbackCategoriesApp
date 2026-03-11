@@ -23,6 +23,26 @@
             <option value="">Выберите пользователя</option>
           </select>
         </label>
+        <label class="field">
+          <span>Пользователи для сравнения в чате</span>
+          <select id="chat-users-select" multiple size="5"></select>
+        </label>
+        <label class="field">
+          <span>Модель Ollama</span>
+          <select id="model-select">
+            <option value="">Загрузка моделей...</option>
+          </select>
+        </label>
+        <div class="field">
+          <span>Загрузить модель</span>
+          <select id="download-model-select">
+            <option value="">Выберите готовую модель</option>
+          </select>
+          <div class="inline-form">
+            <input id="pull-model-input" type="text" placeholder="Например: llama3.1:8b">
+            <button id="pull-model-btn" type="button">Скачать модель</button>
+          </div>
+        </div>
       </div>
 
       <section class="summary">
@@ -31,6 +51,20 @@
           <p>Формат: название карты, затем список активных категорий с процентом.</p>
         </div>
         <div id="summary-output" class="summary-text"></div>
+      </section>
+
+      <section class="summary">
+        <div class="categories__header">
+          <h2>Чат с Ollama</h2>
+          <p>Спросите, у какого пользователя и по какой карте лучше оплатить конкретную покупку. Прогресс загрузки модели тоже показывается здесь.</p>
+        </div>
+        <div class="chat-box">
+          <div id="chat-messages" class="chat-messages"></div>
+          <div class="chat-form">
+            <textarea id="chat-question" rows="4" placeholder="Например: по какой карте лучше купить продукты в супермаркете?"></textarea>
+            <button id="chat-send-btn" type="button">Спросить</button>
+          </div>
+        </div>
       </section>
     </section>
   </main>

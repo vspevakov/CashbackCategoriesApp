@@ -1,0 +1,12 @@
+.idea/
+.qodo/
+.venv/
+.env
+.tmp/
+__pycache__/
+*.py[cod]
+*.iml
+.DS_Store
+
+# Local runtime data
+data/cashback_data.json

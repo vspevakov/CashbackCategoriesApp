@@ -1,0 +1,5 @@
+MODELS_SUBJECT = "cashback.ollama.models"
+CHAT_SUBJECT = "cashback.ollama.chat"
+PULL_SUBJECT = "cashback.ollama.pull"
+PULL_STREAM_SUBJECT = "cashback.ollama.pull_stream"
+WORKERS_QUEUE = "ollama-workers"
