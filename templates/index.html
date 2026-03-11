@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Категории кэшбека</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <div class="panel__header">
+        <p class="eyebrow">FastAPI Cashback Manager</p>
+        <h1>Категории кэшбека на месяц</h1>
+        <p class="subtitle">Выберите пользователя, карту и отметьте нужные категории.</p>
+        <a class="top-link" href="/summary">Перейти на summary</a>
+      </div>
+
+      <div class="controls">
+        <label class="field">
+          <span>Пользователь</span>
+          <select id="user-select">
+            <option value="">Выберите пользователя</option>
+          </select>
+        </label>
+
+        <div class="inline-form">
+          <input id="new-user-input" type="text" placeholder="Новый пользователь">
+          <button id="add-user-btn" type="button">Добавить пользователя</button>
+        </div>
+
+        <label class="field">
+          <span>Карта</span>
+          <select id="card-select" disabled>
+            <option value="">Сначала выберите пользователя</option>
+          </select>
+        </label>
+
+        <div class="inline-form">
+          <input id="new-card-input" type="text" placeholder="Новая карта">
+          <button id="add-card-btn" type="button">Добавить карту</button>
+        </div>
+      </div>
+
+      <section class="categories">
+        <div class="categories__header">
+          <h2>Категории</h2>
+          <p>Отметьте категории, которые действуют для выбранной карты.</p>
+        </div>
+        <div class="inline-form">
+          <input id="new-category-input" type="text" placeholder="Новая категория кэшбека">
+          <button id="add-category-btn" type="button">Добавить категорию</button>
+        </div>
+        <div id="categories-list" class="categories__grid">
+          {% for category in categories %}
+          <label class="checkbox">
+            <input type="checkbox" value="{{ category }}" disabled>
+            <span>{{ category }}</span>
+          </label>
+          {% endfor %}
+        </div>
+      </section>
+
+      <div class="actions">
+        <button id="save-btn" type="button">Сохранить</button>
+        <p id="status" class="status"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

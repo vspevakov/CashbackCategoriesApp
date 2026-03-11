@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary категорий кэшбека</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="panel">
+      <div class="panel__header">
+        <p class="eyebrow">FastAPI Cashback Manager</p>
+        <h1>Summary по пользователю</h1>
+        <p class="subtitle">Выберите пользователя и посмотрите активные категории по каждой карте.</p>
+        <a class="top-link" href="/">Вернуться к редактированию</a>
+      </div>
+
+      <div class="controls">
+        <label class="field">
+          <span>Пользователь</span>
+          <select id="summary-user-select">
+            <option value="">Выберите пользователя</option>
+          </select>
+        </label>
+      </div>
+
+      <section class="summary">
+        <div class="categories__header">
+          <h2>Категории по картам</h2>
+          <p>Формат: название карты, затем список активных категорий с процентом.</p>
+        </div>
+        <div id="summary-output" class="summary-text"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="/static/summary.js"></script>
+</body>
+</html>

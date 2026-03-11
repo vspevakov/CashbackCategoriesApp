@@ -1,0 +1,178 @@
+{
+  "я": {
+    "тбанк": {
+      "Супермаркеты": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Рестораны и кафе": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Такси": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "АЗС": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Аптеки": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Путешествия": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Развлечения": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Онлайн-покупки": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Жд билеты": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Образование": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "все покупки": {
+        "enabled": true,
+        "percent": 1.0
+      },
+      "фастфуд": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "ремонт и мебель": {
+        "enabled": true,
+        "percent": 5.0
+      },
+      "красота": {
+        "enabled": true,
+        "percent": 5.0
+      }
+    },
+    "альфабанк": {
+      "Супермаркеты": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Рестораны и кафе": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Такси": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "АЗС": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Аптеки": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Путешествия": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Развлечения": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Онлайн-покупки": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Жд билеты": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Образование": {
+        "enabled": true,
+        "percent": 5.0
+      },
+      "все покупки": {
+        "enabled": true,
+        "percent": 1.0
+      },
+      "фастфуд": {
+        "enabled": true,
+        "percent": 5.0
+      },
+      "ремонт и мебель": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "красота": {
+        "enabled": false,
+        "percent": 0.0
+      }
+    },
+    "яндекс": {
+      "Супермаркеты": {
+        "enabled": true,
+        "percent": 3.0
+      },
+      "Рестораны и кафе": {
+        "enabled": true,
+        "percent": 3.0
+      },
+      "Такси": {
+        "enabled": true,
+        "percent": 15.0
+      },
+      "АЗС": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Аптеки": {
+        "enabled": true,
+        "percent": 5.0
+      },
+      "Путешествия": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Развлечения": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Онлайн-покупки": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Жд билеты": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "Образование": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "все покупки": {
+        "enabled": true,
+        "percent": 1.0
+      },
+      "фастфуд": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "ремонт и мебель": {
+        "enabled": false,
+        "percent": 0.0
+      },
+      "красота": {
+        "enabled": false,
+        "percent": 0.0
+      }
+    }
+  }
+}
